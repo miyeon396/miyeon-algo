@@ -2,7 +2,7 @@ package com.example.codete.section1string;
 
 import java.util.Scanner;
 
-public class palindromeStr {
+public class PalindromeStr {
     // 대소문자 구분 없이 회문 문자열(앞뒤가 같음)이면 Yes, 아니면 No return
     // 짝수 : 길이를 나누기 2까지 나눠서 돌면서 같은지 비교하도록
     // 홀수 : 나누기 2 해서 그전까지만 비교
@@ -24,7 +24,7 @@ public class palindromeStr {
     }
 
     public static void main(String args[]) {
-        palindromeStr T = new palindromeStr();
+        PalindromeStr T = new PalindromeStr();
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
         System.out.println(T.solution(str));

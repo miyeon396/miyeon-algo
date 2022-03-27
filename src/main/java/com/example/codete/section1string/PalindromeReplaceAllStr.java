@@ -2,7 +2,7 @@ package com.example.codete.section1string;
 
 import java.util.Scanner;
 
-public class palindromeReplaceAllStr {
+public class PalindromeReplaceAllStr {
     // 특수문자, 숫자 받지만 알파벳만을 가지고 회문 검사
     public String solution(String str) {
         String answer = "NO";
@@ -16,7 +16,7 @@ public class palindromeReplaceAllStr {
     }
 
     public static void main(String args[]) {
-        palindromeReplaceAllStr T = new palindromeReplaceAllStr();
+        PalindromeReplaceAllStr T = new PalindromeReplaceAllStr();
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
         System.out.println(T.solution(str));
