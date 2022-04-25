@@ -1,7 +1,5 @@
 package com.example.codete.section2arr;
 
-import com.example.codete.TemplateArrVer;
-
 import java.util.Scanner;
 
 public class ShowStudent_2 {

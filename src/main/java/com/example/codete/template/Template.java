@@ -1,4 +1,4 @@
-package com.example.codete;
+package com.example.codete.template;
 
 import java.util.Scanner;
 
