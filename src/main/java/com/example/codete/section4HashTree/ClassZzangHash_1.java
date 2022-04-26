@@ -20,7 +20,7 @@ public class ClassZzangHash_1 {
                 answer = key;
             }
         }
-//        System.out.println(map.containsKey('A'));
+        System.out.println(map.containsKey('A'));
 //        System.out.println(map.size());
 //        System.out.println(map.remove('A')); //A라는 키의 value 값 리턴
 
