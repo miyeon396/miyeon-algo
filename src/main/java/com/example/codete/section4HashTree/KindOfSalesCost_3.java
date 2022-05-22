@@ -1,6 +1,7 @@
 package com.example.codete.section4HashTree;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class KindOfSalesCost_3 {
     public ArrayList<Integer> solution(int n, int k, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();
         HashMap<Integer, Integer> hm = new HashMap<>();
+
 
         //1. hm에 첫번째그룹 넣어주기
         for(int i=0; i<k-1; i++) {
@@ -33,14 +35,28 @@ public class KindOfSalesCost_3 {
 
     public static void main(String args[]) {
         KindOfSalesCost_3 T = new KindOfSalesCost_3();
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int k = scanner.nextInt();
-        int[] arr = new int[n];
-        for(int i=0; i<n; i++) {
-            arr[i] = scanner.nextInt();
-        }
-        for(int x : T.solution(n,k,arr)) System.out.println(x+" ");
+//        Scanner scanner = new Scanner(System.in);
+//        int n = scanner.nextInt();
+//        int k = scanner.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0; i<n; i++) {
+//            arr[i] = scanner.nextInt();
+//        }
+        HashMap<String,Object> aMap = new HashMap<>();
+        aMap.put("test", "testVal");
+
+
+        HashMap<String,String> bMap = new HashMap<>();
+
+        bMap.put("gg", (String) aMap.getOrDefault("test", null));
+        bMap.put("cc", (String) aMap.getOrDefault("test1", null));
+
+        bMap.keySet().forEach(i -> {
+            System.out.println(bMap.get(i));
+            System.out.println(bMap.get(i)==null);
+        });
+
+//        for(int x : T.solution(n,k,arr)) System.out.println(x+" ");
 
     }
 }
