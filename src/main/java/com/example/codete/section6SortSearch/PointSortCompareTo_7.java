@@ -28,12 +28,6 @@ public class PointSortCompareTo_7 {
     // ex) 5 / 2 7 / 1 3 / 1 2 / 2 5 / 3 6 / -> 1 2 / 1 3 / 2 5 / 2 7 / 3 6
 
     // 좌표를 정렬하는 기술을 익히기
-  public ArrayList<Integer> solution(int n, int[] arr) {
-        ArrayList<Integer> answer = new ArrayList<>();
-
-
-        return answer;
-    }
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
