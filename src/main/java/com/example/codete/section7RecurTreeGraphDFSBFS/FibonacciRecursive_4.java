@@ -10,7 +10,7 @@ public class FibonacciRecursive_4 {
     // 첫줄 총 항 수 N (3<=N<=45). 피보나치 수열 출력
     // ex) 10 -> 1 1 2 3 5 8 13 21 34 55
 
-    // 1. for문 예시 2. 재귀 예시 -> 2가지 가능 정리필요. (재귀가 더 성능이 나쁘긴 함 )
+    // 1. for문 예시 2. 재귀 예시 -> 2가지 가능 정리필요. (재귀가 더 성능이 나쁘긴 함 스택프레임 엄청 생기기 떄문)
 
     // DFS 성능 개선
     // 1. 걍 DFS 계속 호출
@@ -19,6 +19,10 @@ public class FibonacciRecursive_4 {
 
     static int[] fibo;
     public int DFS(int n) { //n은 항의 번호
+       if (fibo[n] > 0) {
+           return fibo[n];
+       }
+
        if(n==1 || n==2) {
            return fibo[n] = 1;
        } else {
