@@ -13,11 +13,17 @@ public class Memoization_7 {
     // ex) 5 3 -> 10 , 33 19 -> 818809200
     // 재귀니까 2가닥으로 뻗음  5C3 = 4C2 + 4C3 ...
 
+    int[][] dy = new int [35][35];
+
     public int DFS(int n, int r) {
+
+        if (dy[n][r] > 0) {
+            return dy[n][r];
+        }
         if (n==r || r==0) {
             return 1;
         } else {
-            return DFS(n-1, r-1) + DFS(n-1, r);
+            return dy[n][r] = DFS(n-1, r-1) + DFS(n-1, r);
         }
     }
 
